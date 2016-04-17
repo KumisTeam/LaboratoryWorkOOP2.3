@@ -8,11 +8,11 @@ namespace LaboratoryWorkOOP2._3_sharp_
 {
     class Digits:Strings
     {
-        List<byte> allDigits;
+        List<int> allDigits;
 
-        public Digits(byte[] arr)
+        public Digits(int[] arr)
         {
-            allDigits = new List<byte>();
+            allDigits = new List<int>();
             foreach (var elem in arr)
                 allDigits.Add(elem);
         }
@@ -32,6 +32,14 @@ namespace LaboratoryWorkOOP2._3_sharp_
         public override int StringLengnth()
         {
             return allDigits.Count;
+        }
+
+        public virtual void RemoveFromOddPosition()
+        {
+            for (int i = 0; i < allDigits.Count; i++)
+                if (i % 2 == 1)
+                    allDigits.Remove(allDigits[i]);
+            Show();
         }
     }
 }
