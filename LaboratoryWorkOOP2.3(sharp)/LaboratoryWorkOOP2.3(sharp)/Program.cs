@@ -10,6 +10,13 @@ namespace LaboratoryWorkOOP2._3_sharp_
     {
         static void Main(string[] args)
         {
+            Digit d = new Digit("311113335556672");
+            d.Show();
+            d.DeleteSmth();
+
+            Letter l = new Letter("asdsaaaahhshhhh");
+            l.Show();
+            l.DeleteSmth();
         }
     }
 }
