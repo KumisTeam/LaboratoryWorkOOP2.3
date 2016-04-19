@@ -16,7 +16,7 @@ namespace LaboratoryWorkOOP2._3_sharp_
             char[] tmpArr = usrDigits.ToCharArray();
             foreach (var elem in tmpArr)
                 if (char.IsDigit(elem))
-                    digits.Add(Convert.ToInt32(elem));
+                    digits.Add((int)Char.GetNumericValue(elem));
         }
 
         public override void DeleteSmth()
