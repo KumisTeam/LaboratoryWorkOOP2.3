@@ -23,6 +23,7 @@ namespace LaboratoryWorkOOP2._3_sharp_
         {
             for (int i = 0; i < digits.Count; i++)
                 digits.Remove(5);
+            Show();
         }
 
         public override int GetSize()
